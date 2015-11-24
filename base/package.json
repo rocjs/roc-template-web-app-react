@@ -1,0 +1,11 @@
+{
+  "name": "{{{ appName }}}",
+  "version": "1.0.0",
+  "description": "{{{ appDesc }}}",
+  "roc": "1.0.0-alpha5",
+  "author": "{{{ appAuthor }}}",
+  "license": "{{{ appLicense }}}",
+  "dependencies": {
+    "roc-web-react": "*"
+  }
+}
