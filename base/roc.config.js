@@ -1,5 +1,6 @@
 module.exports = {
     config: {
+        applicationName: '{{{ appName }}}',
         port: {{{ rocPort }}},
         build: {
             entry: { client: '', server: ''},
