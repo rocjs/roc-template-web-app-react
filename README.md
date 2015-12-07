@@ -1,9 +1,9 @@
-# roc-base-web-react
+# roc-template-web-react
 
-Base for creating a application that builds on [roc-web-react](https://github.com/vgno/roc-web-react).
+Template for creating a application that builds on [roc-web-react](https://github.com/vgno/roc-web-react).
 
 ## Install
 
-`$ roc init vgno/roc-web-base-react`
+`$ roc init vgno/roc-template-web-react`
 
 _This repository is a default alternative in the Roc CLI and can be used directly using `$ roc init web-react`_.

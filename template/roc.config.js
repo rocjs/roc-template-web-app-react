@@ -1,9 +1,8 @@
 module.exports = {
     config: {
-        applicationName: '{{{ appName }}}',
+        applicationName: '{{{ rocAppName }}}',
         port: {{{ rocPort }}},
         build: {
-            entry: { client: '', server: ''},
             reducers: 'reducers.js',
             routes: 'routes.js'
         }

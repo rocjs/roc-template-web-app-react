@@ -7,6 +7,10 @@ const prompt =
         name: 'rocPort',
         message: 'What\'s the port for the application?',
         default: baseConfig.port
+    }, {
+        type: 'input',
+        name: 'rocAppName',
+        message: 'What do you what to use for <title>?'
     }]);
 
 module.exports = {
