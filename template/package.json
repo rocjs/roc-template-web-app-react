@@ -2,7 +2,7 @@
   "name": "{{{ appName }}}",
   "version": "1.0.0",
   "description": "{{{ appDesc }}}",
-  "roc": "^1.0.0",
+  "roc": "^1.0.0-alpha",
   "author": "{{{ appAuthor }}}",
   "license": "{{{ appLicense }}}",
   "dependencies": {

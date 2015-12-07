@@ -2,7 +2,7 @@
   "name": "roc-template-web-react",
   "version": "1.0.0",
   "description": "A simple start on a generic React web application for Roc",
-  "roc": "^1.0.0",
+  "roc": "^1.0.0-alpha",
   "author": "VG",
   "license": "MIT",
   "keywords": [
