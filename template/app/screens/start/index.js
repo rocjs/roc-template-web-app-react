@@ -6,7 +6,7 @@ import Clicker from '../../components/clicker';
 
 import styles from './style.scss';
 
-export default class Main extends React.Component {
+export default class Start extends React.Component {
     render() {
         return (
             <div className={styles.main}>

@@ -17,7 +17,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 @connect(mapStateToProps, mapDispatchToProps)
-export default class Main extends React.Component {
+export default class Clicker extends React.Component {
     static propTypes = {
         clicker: React.PropTypes.number.isRequired,
         click: React.PropTypes.func.isRequired
