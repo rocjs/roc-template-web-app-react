@@ -2,34 +2,16 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { click } from './clicker';
+import Clicker from '../../components/clicker';
 
 import styles from './style.scss';
 
-function mapStateToProps(state) {
-    return {
-        clicker: state.clicker
-    };
-}
-
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ click }, dispatch);
-}
-
-@connect(mapStateToProps, mapDispatchToProps)
-export default class Main extends React.Component {
-    static propTypes = {
-        clicker: React.PropTypes.number.isRequired,
-        click: React.PropTypes.func.isRequired
-    }
-
+export default class Start extends React.Component {
     render() {
         return (
             <div className={styles.main}>
                 <h1>Bacon ipsum dolor</h1>
-                <div>
-                    { this.props.clicker } <button onClick={ this.props.click }>Click me!</button>
-                </div>
+                <Clicker />
                 <p>
                 Bacon ipsum dolor amet hamburger swine filet mignon biltong shank, turkey alcatra brisket flank ribeye
                 landjaeger beef ribs. Ham flank pancetta biltong pork belly shankle brisket doner beef. Pig sirloin turkey
