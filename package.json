@@ -9,7 +9,6 @@
     "roc"
   ],
   "dependencies": {
-      "roc": "*",
-      "roc-web-react": "*"
+      "roc": "*"
   }
 }
