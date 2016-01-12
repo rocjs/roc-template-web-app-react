@@ -1,4 +1,4 @@
-const defaultPrompt = require('roc').prompt;
+const defaultPrompt = require('roc').defaultPrompt;
 
 const prompt =
     defaultPrompt.concat([{
