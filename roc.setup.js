@@ -8,7 +8,7 @@ const prompt =
         default: 3000
     }, {
         type: 'input',
-        name: 'rocAppName',
+        name: 'rocTitleName',
         message: 'What do you what to use for <title>?',
         default: 'My Roc Application'
     }]);

@@ -1,9 +1,9 @@
 {
-  "name": "{{{ appName }}}",
+  "name": "{{ rocAppName }}",
   "version": "1.0.0",
-  "description": "{{{ appDesc }}}",
-  "author": "{{{ appAuthor }}}",
-  "license": "{{{ appLicense }}}",
+  "description": "{{ rocAppDesc }}",
+  "author": "{{ rocAppAuthor }}",
+  "license": "{{ rocAppLicense }}",
   "dependencies": {
     "roc-web-react": "*"
   }
