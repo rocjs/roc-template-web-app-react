@@ -9,6 +9,9 @@ module.exports = {
         build: {
             reducers: 'app/redux/reducers.js',
             routes: 'app/routes/index.js'
+        },
+        dev: {
+            open: true
         }
     }
 };

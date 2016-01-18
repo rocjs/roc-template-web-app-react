@@ -5,9 +5,14 @@
   "author": "VG",
   "license": "MIT",
   "keywords": [
-    "roc"
+    "roc",
+    "react",
+    "universal",
+    "isomoprhic",
+    "redux"
   ],
   "dependencies": {
-      "roc": "*"
+      "roc": "*",
+      "chalk": "~1.1.1"
   }
 }
