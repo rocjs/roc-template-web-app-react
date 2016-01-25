@@ -1,4 +1,29 @@
 .main {
-    background: #ccc;
+    margin-top: 20px;
+    height: 90px;
+    width: 300px;
+    color: #2a7e8e;
+    font-size: 28px;
+    border: 1px solid #fff;
     padding: 20px;
+
+    input {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 50px;
+        padding: 2px;
+    }
+
+    button {
+        float: left;
+        margin-left: 20px;
+        padding: 4px;
+        height: 50px;
+        width: 80px;
+    }
+}
+
+.clicker {
+    float: left;
 }

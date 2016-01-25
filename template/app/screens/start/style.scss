@@ -1,6 +1,9 @@
 .main {
-    background: #ddd;
-    width: 700px;
-    margin: auto;
-    padding: 20px;
+    background: rgb(220, 235, 238);
+    color: #000;
+
+    ul {
+        list-style-position: inside;
+        list-style-type: disc;
+    }
 }
