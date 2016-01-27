@@ -3,7 +3,11 @@
     color: #fff;
     background: rgb(42, 126, 142);
     font-size: 14px;
-    line-height: 30px;
+    span {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
     a:visited {
         color: #fff;
     }
