@@ -26,7 +26,15 @@ export default class Clicker extends React.Component {
     render() {
         return (
             <div className={styles.main}>
-                { this.props.clicker } <button onClick={ this.props.click }>Click me!</button>
+                <span className={styles.clicker}>{ this.props.clicker } +</span>
+                <input className={styles.input} ref='incInput' type='text' defaultValue="1" />
+
+                <button onClick={ () => {
+                    const inputValue = this.refs.incInput.value.trim();
+                    this.props.click(parseInt(inputValue));
+                } }>
+                    Modify counter!
+                </button>
             </div>
         );
     }
