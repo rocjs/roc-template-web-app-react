@@ -8,7 +8,7 @@
     "build": "roc build",
     "dev": "roc dev",
     "start": "roc start"
-  }
+  },
   "dependencies": {
     "roc-web-react": "*"
   }
