@@ -10,6 +10,6 @@
     "start": "roc start"
   },
   "dependencies": {
-    "roc-web-react": "*"
+    "roc-web-react": "1.0.0-beta7"
   }
 }
