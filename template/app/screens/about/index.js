@@ -1,15 +1,15 @@
-// React Hot Reload does not support function components as of now
+// React Hot Reload does not support stateless function components as of now
 /* eslint-disable react/prefer-stateless-function */
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './style.scss';
 
-export default class About extends React.Component {
+export default class About extends Component {
   render() {
     return (
       <div className={styles.main}>
         <div className="header">
-          <h1>About</h1>
-          <h2>roc-web-react</h2>
+          <h1>Framsia</h1>
+          <h2>Roc makes this easy!</h2>
         </div>
         <div className="wrapper">
           <h4>Roc is an open source project by VG</h4>
