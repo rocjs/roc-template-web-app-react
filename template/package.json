@@ -7,9 +7,20 @@
   "scripts": {
     "build": "roc build",
     "dev": "roc dev",
-    "start": "roc start"
+    "start": "roc start",
+    "lint": "eslint .",
+    "test": "npm run lint"
   },
   "dependencies": {
-    "roc-web-react": "1.0.0-beta7"
+    "roc-package-web-app-react": "^1.0.0-alpha"
+  },
+  "devDependencies": {
+    "babel-eslint": "6.0.2",
+    "eslint": "2.6.0",
+    "eslint-config-airbnb": "6.2.0",
+    "eslint-plugin-react": "4.2.3",
+    "roc-package-web-app-react-dev": "^1.0.0-alpha",
+    "roc-plugin-assets-images": "^1.0.0-alpha",
+    "roc-plugin-style-sass": "^1.0.0-alpha"
   }
 }

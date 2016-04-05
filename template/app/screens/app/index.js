@@ -1,35 +1,29 @@
-import React from 'react';
+// React Hot Reload does not support stateless function components as of now
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet';
 
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import styles from './style.scss';
 
-export default class App extends React.Component {
-    static propTypes = {
-        children: React.PropTypes.node.isRequired
-    }
+export default class App extends Component {
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+  }
 
-    render() {
-        return (
-            <div className={styles.main}>
-                <Helmet
-                    link={[{
-                        rel: 'icon', href: '/favicon.png'
-                    }, {
-                        href: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,800',
-                        rel: 'stylesheet',
-                        type: 'text/css'
-                    }, {
-                        href: 'http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700',
-                        rel: 'stylesheet',
-                        type: 'text/css'
-                    }]}
-                />
-                <Navbar />
-                { this.props.children }
-                <Footer />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className={styles.main}>
+        <Helmet
+          link={[{
+            rel: 'icon', href: '/favicon.png',
+          }]}
+        />
+        <Navbar />
+        { this.props.children }
+        <Footer />
+      </div>
+    );
+  }
 }
