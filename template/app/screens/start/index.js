@@ -80,7 +80,7 @@ export default class Start extends Component {
 
           <h4>Stack composition</h4>
           <ul>
-            <li>Document headers: React Helmet ~2.2.0</li>
+            <li>Document headers: React Helmet ~2.3.1</li>
             <li>Views: React ~0.14.0</li>
             <li>Routing: React Router ~1.0.0 & Redux Simple Router ~0.0.8</li>
             <li>Flux: Redux ~3.0.2 & React-Redux ~4.0.0</li>
