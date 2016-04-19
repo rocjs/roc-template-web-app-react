@@ -20,7 +20,6 @@
     "eslint-config-airbnb": "6.2.0",
     "eslint-plugin-react": "4.2.3",
     "roc-package-web-app-react-dev": "^1.0.0-alpha",
-    "roc-plugin-assets-images": "^1.0.0-alpha",
     "roc-plugin-style-sass": "^1.0.0-alpha"
   }
 }
