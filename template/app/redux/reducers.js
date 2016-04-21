@@ -1,1 +1,0 @@
-export clicker from './clicker';
