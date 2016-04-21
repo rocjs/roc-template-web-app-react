@@ -7,8 +7,8 @@ module.exports = {
       favicon: 'favicon.png',
     },
     build: {
-      reducers: 'app/redux/reducers.js',
-      routes: 'app/routes/index.js',
+      reducers: 'src/redux/reducers.js',
+      routes: 'src/routes/index.js',
     },
   },
 };
