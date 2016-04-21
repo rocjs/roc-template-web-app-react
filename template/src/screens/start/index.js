@@ -46,7 +46,7 @@ export default class Start extends Component {
 
           <h4>Get your Redux actions on</h4>
           <p>
-            We have added an example click action for you at <strong>app/redux/clicker.js</strong>
+            We have added an example click action for you at <strong>src/redux/clicker.js</strong>
           </p>
           <p>
             Dispatch a click action by hitting the button below!
