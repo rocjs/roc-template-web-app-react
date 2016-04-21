@@ -27,7 +27,7 @@ export default class Start extends Component {
           <h4>Routing</h4>
           <p>
             Your <a href="https://github.com/reactjs/react-router">React Router</a> entry is set up
-            at <strong>app/routes/index.js</strong>
+            at <strong>src/routes/index.js</strong>
           </p>
           <p>
             You can test the universal route changes with the included test routes using the navbar
@@ -37,7 +37,7 @@ export default class Start extends Component {
           <h4>Redux reducers</h4>
           <p>
             Your <a href="https://github.com/reactjs/redux">Redux</a> reducer exports are set up
-            at <strong>app/redux/reducers.js</strong>
+            at <strong>src/redux/reducers.js</strong>
           </p>
           <p>
             Reducers are pure functions that define new state in your app. We have included a
