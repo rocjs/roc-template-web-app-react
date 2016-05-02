@@ -16,10 +16,12 @@
   },
   "devDependencies": {
     "babel-eslint": "6.0.2",
+    "enzyme": "^2.2.0",
     "eslint": "2.6.0",
     "eslint-config-airbnb": "6.2.0",
     "eslint-plugin-react": "4.2.3",
     "roc-package-web-app-react-dev": "^1.0.0-alpha",
-    "roc-plugin-style-sass": "^1.0.0-alpha"
+    "roc-plugin-style-sass": "^1.0.0-alpha",
+    "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha."
   }
 }
