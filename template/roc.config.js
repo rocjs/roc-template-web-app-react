@@ -1,3 +1,4 @@
+var merge = require('roc').merge;
 module.exports = {
   settings: {
     runtime: {
@@ -11,8 +12,8 @@ module.exports = {
       routes: 'src/routes/index.js',
     },
   },
- action: () => (rocObject) => {
-    if (rocObject.hook === 'build-webpack') {
+action: () => (rocObject) => {
+    if (rocObject.hook === 'build-webpack' && rocObject.settings.build.mode === 'test') {
       const externals = {
         'cheerio': 'window',
         'react-dom': 'window',
@@ -24,5 +25,4 @@ module.exports = {
         return rocObject.previousValue;
       };
     }
-  }
-};
+  }};

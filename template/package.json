@@ -22,6 +22,7 @@
     "eslint-plugin-react": "4.2.3",
     "roc-package-web-app-react-dev": "^1.0.0-alpha",
     "roc-plugin-style-sass": "^1.0.0-alpha",
-    "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha."
+    "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha",
+	"react-addons-test-utils": "^14.0.0"
   }
 }
