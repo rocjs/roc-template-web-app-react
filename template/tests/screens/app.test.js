@@ -14,8 +14,8 @@ describe('App screen', () => {
     expect(actual.type()).toEqual('div');
   });
   it('Loads Footer, Navbar and Helmet', () => {
-    expect(actual.contains(<Helmet />)).toBeTrue;
-    expect(actual.contains(<Footer />)).toBeTrue;
-    expect(actual.contains(<NavBar />)).toBeTrue;
+    expect(actual.find(Helmet).length).toBeGreaterThan(0);
+    expect(actual.find(Footer).length).toBeGreaterThan(0);
+    expect(actual.find(NavBar).length).toBeGreaterThan(0);
   });
 });
