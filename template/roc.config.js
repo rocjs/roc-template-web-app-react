@@ -1,4 +1,3 @@
-var merge = require('roc').merge;
 module.exports = {
   settings: {
     runtime: {
@@ -11,8 +10,14 @@ module.exports = {
       reducers: 'src/redux/reducers.js',
       routes: 'src/routes/index.js',
     },
+    test: {
+      tests: {
+        pattern: /test/i,
+        path: 'tests'
+      }
+    },
   },
-action: () => (rocObject) => {
+  action: () => (rocObject) => {
     if (rocObject.hook === 'build-webpack' && rocObject.settings.build.mode === 'test') {
       const externals = {
         'cheerio': 'window',
@@ -25,4 +30,5 @@ action: () => (rocObject) => {
         return rocObject.previousValue;
       };
     }
-  }};
+  },
+};
