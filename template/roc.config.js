@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
     runtime: {
-      applicationName: 'Playground',
-      port: 3000,
+      applicationName: {{ rocTitleName }},
+      port: {{ rocPort }},
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
     },
