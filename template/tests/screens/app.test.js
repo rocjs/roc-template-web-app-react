@@ -9,13 +9,13 @@ import NavBar from '../../src/components/navbar';
 
 describe('App screen', () => {
   const empty = [];
-  const actual = shallow(<App children={ empty } />);
+  const wrapper = shallow(<App children={ empty } />);
   it('renders a div', () => {
-    expect(actual.type()).toEqual('div');
+    expect(wrapper.type()).toEqual('div');
   });
   it('Loads Footer, Navbar and Helmet', () => {
-    expect(actual.find(Helmet).length).toBeGreaterThan(0);
-    expect(actual.find(Footer).length).toBeGreaterThan(0);
-    expect(actual.find(NavBar).length).toBeGreaterThan(0);
+    expect(wrapper.find(Helmet).length).toBeGreaterThan(0);
+    expect(wrapper.find(Footer).length).toBeGreaterThan(0);
+    expect(wrapper.find(NavBar).length).toBeGreaterThan(0);
   });
 });

@@ -6,15 +6,14 @@ import Start from '../../src/screens/start';
 import Clicker from '../../src/components/clicker';
 
 describe('Start screen', () => {
-  const actual = shallow(<Start />);
+  const wrapper = shallow(<Start />);
   it('renders a div', () => {
-    expect(actual.type()).toEqual('div');
+    expect(wrapper.type()).toEqual('div');
   });
   it('has a Clicker', () => {
-    expect(actual.find(Clicker).length).toBeGreaterThan(0);
+    expect(wrapper.find(Clicker).length).toBeGreaterThan(0);
   });
   it('has an h4 tag', () => {
-    console.log(actual.find('h4'));
-    expect(actual.find('h4'));
+    expect(wrapper.find('h4'));
   });
 });
