@@ -1,7 +1,7 @@
 module.exports = {
   settings: {
     runtime: {
-      applicationName: {{ rocTitleName }},
+      applicationName: '{{ rocTitleName }}',
       port: {{ rocPort }},
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
