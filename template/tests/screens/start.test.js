@@ -25,7 +25,7 @@ describe('Start screen', () => {
   it('has a Clicker', () => {
     expect(wrapper.find(Clicker).length).toBeGreaterThan(0);
   });
-  it('has an h4 tag', () => {
-    expect(wrapper.find(<h4 />));
+  it('has an h4 tag', () => { // In fact it has many
+    expect(wrapper.find('h4').length).toBeGreaterThan(0);
   });
 });
