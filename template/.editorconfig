@@ -24,7 +24,7 @@ end_of_line = lf
 charset = utf-8
 
 # Remove any whitespace characters preceding newline characters ["true", "false"]
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true
 
 # Ensure file ends with a newline when saving ["true", "false"]
 insert_final_newline = true

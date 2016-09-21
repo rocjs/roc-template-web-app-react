@@ -1,18 +1,15 @@
 {
   "name": "roc-template-web-app-react",
-  "version": "1.0.0",
+  "version": "1.1.0-next.1",
   "description": "A simple start on a generic React web application for Roc",
-  "author": "VG",
+  "author": "Verdens Gang AS",
   "license": "MIT",
   "keywords": [
     "roc",
+    "roc-template",
     "react",
     "universal",
     "isomoprhic",
     "redux"
-  ],
-  "dependencies": {
-      "roc": "^1.0.0-rc",
-      "chalk": "~1.1.1"
-  }
+  ]
 }

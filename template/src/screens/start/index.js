@@ -67,8 +67,12 @@ export default class Start extends Component {
           </p>
 
           <h4>Use the Roc commandline</h4>
-          For helpful information use <code>--help</code> along with your comand.
+          For helpful information use <code>--help</code> along with your command.
           You can see the available documentation for this package <a href="https://github.com/rocjs/roc-package-web-app-react/blob/packages/roc-package-web-app-react/docs/">here</a>.
+
+          <h5>Generate documentation</h5>
+          <pre>roc docs</pre>
+
           <h5>Start development mode</h5>
           <pre>roc dev</pre>
 
@@ -77,15 +81,6 @@ export default class Start extends Component {
 
           <h5>Run production bundle</h5>
           <pre>roc start</pre>
-
-          <h4>Stack composition</h4>
-          <ul>
-            <li>Document headers: React Helmet ~2.3.1</li>
-            <li>Views: React ~0.14.0</li>
-            <li>Routing: React Router ~1.0.0 & Redux Simple Router ~0.0.8</li>
-            <li>Flux: Redux ~3.0.2 & React-Redux ~4.0.0</li>
-            <li>Configuration: Node config ~1.16.0</li>
-          </ul>
 
           <h4>Learn more</h4>
           <p>
