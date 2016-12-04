@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
     runtime: {
-      applicationName: 'React playground',
-      port: 3000,
+      applicationName: '{{ title }}',
+      port: '{{ port }}',
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
       {{#if_eq fetchExample true}}
