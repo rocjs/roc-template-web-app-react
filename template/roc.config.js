@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
     runtime: {
-      applicationName: '{{ title }}',
-      port: '{{ port }}',
+      applicationName: '{{ title }}',
+      port: {{ port }},
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
       {{#if_eq fetchExample true}}
