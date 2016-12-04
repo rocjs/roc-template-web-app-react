@@ -4,5 +4,8 @@
     "globals": {
         "__NODE__": true,
         "__WEB__": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": 0
     }
 }

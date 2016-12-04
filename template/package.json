@@ -4,19 +4,30 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "license": "{{ license }}",
-  {{#if_eq license "UNLICENSED"}}
   "private": true,
-  {{/if_eq}}
   "scripts": {
     "build": "roc build",
     "dev": "roc dev",
     "start": "roc start"
   },
   "dependencies": {
-    "roc-package-web-app-react": "^1.0.0-beta.10"
+    "roc-package-web-app-react": "^1.0.0-beta.16"
   },
   "devDependencies": {
-    "roc-package-web-app-react-dev": "^1.0.0-beta.10",
-    "roc-plugin-style-sass": "^1.0.0-beta.3"
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    {{#if fetchExample}}
+    "isomorphic-fetch": "^2.2.1",
+    {{else}}
+      {{#if reduxExample}}
+    "isomorphic-fetch": "^2.2.1",
+      {{/if}}
+    {{/if}}
+    "roc-package-web-app-react-dev": "^1.0.0-beta.16",
+    "roc-plugin-style-sass": "1.0.0-beta.5"
   }
 }
