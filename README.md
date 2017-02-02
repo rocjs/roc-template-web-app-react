@@ -4,6 +4,6 @@ Template for creating a application that builds on [roc-package-web-app-react](h
 
 ## Install
 
-`$ roc init rocjs/roc-package-web-app-react`
+`$ roc init rocjs/roc-template-web-app-react`
 
 _This repository is a default alternative in the Roc CLI and can be used directly using `$ roc init web-app-react`_.
