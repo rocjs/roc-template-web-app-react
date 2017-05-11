@@ -1,6 +1,7 @@
 // React Hot Reload does not support stateless function components as of now
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 
 import Navbar from '../../components/navbar';

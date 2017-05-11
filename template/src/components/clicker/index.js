@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -19,8 +20,8 @@ function mapDispatchToProps(dispatch) {
 @connect(mapStateToProps, mapDispatchToProps)
 export default class Clicker extends React.Component {
   static propTypes = {
-    clicker: React.PropTypes.number.isRequired,
-    click: React.PropTypes.func.isRequired,
+    clicker: PropTypes.number.isRequired,
+    click: PropTypes.func.isRequired,
   }
 
   render() {
