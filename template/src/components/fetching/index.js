@@ -2,18 +2,18 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { provideHooks } from 'redial';
-import isoFetch from 'isomorphic-fetch';
+import fetch from 'isomorphic-fetch';
 
 import styles from './style.scss';
 
 /* functions that promise to fetch json data from GitHub API */
 function fetchRocRepos() {
-  return isoFetch('https://api.github.com/users/rocjs/repos')
+  return fetch('https://api.github.com/users/rocjs/repos')
   .then(response => response.json());
 }
 
 function fetchRocStargazers() {
-  return isoFetch('https://api.github.com/repos/rocjs/roc')
+  return fetch('https://api.github.com/repos/rocjs/roc')
   .then(response => response.json());
 }
 
@@ -33,15 +33,18 @@ class RepoList extends Component {
 
   render() {
     if (this.props.loading) {
-      return <ul><li>Loading...</li></ul>;
+      return <span>Loading...</span>;
     }
 
-    let repoItems = [];
+    let repoItemsToDisplay = [];
+
     if (this.props.repo.length > 0) {
-      repoItems = this.props.repo.map(repo => <li key={repo.id}>{repo.name} </li>);
+      repoItemsToDisplay = this.props.repo
+        .filter((repo, index) => index < this.props.display)
+        .map(repo => <li key={repo.id}>{repo.name} </li>);
     }
 
-    return <ul>{ repoItems.splice(0, this.props.display) }</ul>;
+    return <ul>{ repoItemsToDisplay }</ul>;
   }
 }
 
