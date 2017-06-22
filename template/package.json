@@ -11,6 +11,11 @@
     "start": "roc start"
   },
   "dependencies": {
+    {{#if fetchExample}}
+    "isomorphic-fetch": "^2.2.1",
+    {{else if reduxExample}}
+    "isomorphic-fetch": "^2.2.1",
+    {{/if}}
     "roc-package-web-app-react": "^1.0.0-beta.16"
   },
   "devDependencies": {
@@ -20,13 +25,6 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
-    {{#if fetchExample}}
-    "isomorphic-fetch": "^2.2.1",
-    {{else}}
-      {{#if reduxExample}}
-    "isomorphic-fetch": "^2.2.1",
-      {{/if}}
-    {{/if}}
     "roc-package-web-app-react-dev": "^1.0.0-beta.16",
     "roc-plugin-style-sass": "1.0.0-beta.5"
   }
