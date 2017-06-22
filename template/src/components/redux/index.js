@@ -33,12 +33,10 @@ function fetchRocStargazers() {
     };
 
     // dispatch the thunk that will later dispatch a success of failure action depending on outcome
-    dispatch(fetchThunk);
+    return dispatch(fetchThunk);
   },
 })
 @connect(state => ({
-  loading: state.repo.loading,
-  error: state.repo.error,
   stargazers: state.repo.stargazers,
 }))
 export default class Redux extends Component {
