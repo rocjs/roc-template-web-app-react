@@ -5,7 +5,7 @@ module.exports = {
       port: {{ port }},
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
-      {{#if_eq fetchExample true}}
+      {{#if fetchExample}}
       // fetch settings (these are the defaults)
       fetch: {
         server: ['fetch'], // hook used by server for fetching
@@ -15,12 +15,12 @@ module.exports = {
           parallel: false, // if we should start non-blocking fetches in parallel with blocking ones
         },
       },
-      {{/if_eq}}
+      {{/if}}
     },
     build: {
-      {{#if_eq reduxExample true}}
+      {{#if reduxExample}}
       reducers: 'src/redux/reducers.js',
-      {{/if_eq}}
+      {{/if}}
       routes: 'src/routes.js',
     },
     dev: {
