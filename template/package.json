@@ -8,6 +8,7 @@
   "scripts": {
     "build": "roc build",
     "dev": "roc dev",
+    "lint": "eslint .",
     "start": "roc start"
   },
   "dependencies": {
