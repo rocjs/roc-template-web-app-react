@@ -38,7 +38,7 @@
         },
         "reduxExample": {
             "type": "confirm",
-            "message": "Include Redux example?"
+            "message": "Include Redux example with data-fetching?"
         }
     },
     "filters": {
