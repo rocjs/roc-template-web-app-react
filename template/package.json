@@ -9,7 +9,9 @@
     "build": "roc build",
     "dev": "roc dev",
     "lint": "eslint .",
-    "start": "roc start"
+    "start": "roc start"{{#if testJest}},
+    "test": "roc test"
+    {{/if}}
   },
   "dependencies": {
     {{#if fetchExample}}
@@ -27,6 +29,8 @@
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
     "roc-package-web-app-react-dev": "^1.0.0-beta.16",
-    "roc-plugin-style-sass": "1.0.0-beta.5"
+    "roc-plugin-style-sass": "1.0.0-beta.5"{{#if testJest}},
+    "roc-plugin-test-jest": "^1.0.0-beta.3"
+    {{/if}}
   }
 }
