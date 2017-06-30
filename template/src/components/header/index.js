@@ -1,5 +1,5 @@
 import React from 'react';
-import { IndexLink, Link } from 'react-router';
+import { IndexLink{{#if fetchExample }}, Link{{else if reduxExample}}, Link{{/if}} } from 'react-router';
 
 import logo from './roc.png';
 import styles from './style.scss';
