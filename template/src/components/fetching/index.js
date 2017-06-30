@@ -1,5 +1,5 @@
 // React Hot Reload does not support stateless function components as of now
-/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/prefer-stateless-function, react/no-multi-comp */
 import React, { Component } from 'react';
 import { provideHooks } from 'redial';
 import fetch from 'isomorphic-fetch';
@@ -142,3 +142,4 @@ export default class Fetching extends Component {
     );
   }
 }
+/* eslint-enablereact/prefer-stateless-function, react/no-multi-comp */
