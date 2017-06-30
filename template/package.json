@@ -4,7 +4,9 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "license": "{{ license }}",
+  {{#if_eq license "UNLICENSED"}}
   "private": true,
+  {{/if_eq}}
   "scripts": {
     "build": "roc build",
     "dev": "roc dev",
