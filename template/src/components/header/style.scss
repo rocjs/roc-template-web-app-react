@@ -1,0 +1,62 @@
+$bright: #fff;
+$light: #5f7a91;
+$dark: #254763;
+
+.header {
+    background: $light;
+    overflow: auto;
+    text-align: center;
+}
+
+.menu {
+    margin: 0 auto 0 auto;
+
+    li {
+        display: inline-block;
+        {{#if fetchExample}}
+            {{#if reduxExample}}
+        width: 33.3%;
+            {{else}}
+        width: 50%;
+            {{/if}}
+        {{else}}
+            {{#if reduxExample}}
+        width: 50%;
+            {{else}}
+        width: 100%;
+            {{/if}}
+        {{/if}}
+        height: 40px;
+        line-height: 40px;
+        margin: 0 0 0 0;
+    }
+
+    li:nth-child(2) {
+        border-left: 1px solid $bright;
+        border-right: 1px solid $bright;
+    }
+}
+
+.item {
+    display: block;
+    background: $dark;
+    border-bottom: 1px solid $bright;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $bright;
+        color: $dark;
+        border-bottom: none;
+    }
+}
+
+.active {
+    background: $bright;
+    color: $dark;
+    border-bottom: none;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px 0 20px 0;
+}

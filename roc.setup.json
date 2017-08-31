@@ -31,10 +31,27 @@
         "title": {
             "type": "string",
             "message": "<title>"
+        },
+        "fetchExample": {
+            "type": "confirm",
+            "message": "Include data-fetching example?"
+        },
+        "reduxExample": {
+            "type": "confirm",
+            "message": "Include Redux example with data-fetching?"
+        },
+        "testJest": {
+            "type": "confirm",
+            "message": "Include Jest for testing?"
         }
     },
     "filters": {
-        "LICENSE": "license === 'MIT'"
+        "LICENSE": "license === 'MIT'",
+        "src/redux/**/*": "reduxExample",
+        "src/components/redux/**/*": "reduxExample",
+        "src/components/clicker/**/*": "reduxExample",
+        "src/components/fetching/**/*": "fetchExample",
+        "src/components/**/*.spec.js": "testJest"
     },
     "completionMessage": "To get started:\n\n{{#unless inPlace}}  cd {{destDirName}}\n{{/unless}}  npm install\n  npm run dev\n\n  It will open your default browser when ready.\n  You can change this by setting 'dev.browsersync.options.open' to 'false' in roc.config.js"
 }

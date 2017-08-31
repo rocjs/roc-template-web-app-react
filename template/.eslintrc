@@ -1,8 +1,14 @@
 {
-    "extends": "airbnb",
+    "extends": [
+      "airbnb",
+      "roc"
+    ],
     "parser": "babel-eslint",
-    "globals": {
-        "__NODE__": true,
-        "__WEB__": true
+    "rules": {
+        "react/jsx-filename-extension": 0
+    }{{#if testJest}},
+    "env": {
+      "jest": true
     }
+    {{/if}}
 }

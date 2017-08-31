@@ -1,0 +1,44 @@
+@import "reset";
+
+$bright: #fff;
+$light: #5f7a91;
+$dark: #254763;
+
+body {
+    background: $bright;
+    color: $dark;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 52px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+button {
+    padding: 4px;
+}
+
+.main {
+    background: #fff;
+    padding: 15px;
+    max-width: 750px;
+    margin: 0 auto 0 auto;
+}
